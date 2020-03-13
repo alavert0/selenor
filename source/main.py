@@ -1118,15 +1118,7 @@ async def on_message(message):
         if staffMemberRequest == 0: await sendError("Staff only.", channel) ; return 0
 
         # init variables
-
-
-    elif command == "order66":
-        await channel.send("Getting to the senate...")
-
-
-        if message.author.name != "Kendrik":
-            await channel.send("Only the emperor can give the order..")
-
+       #do something to /order66 (checking name is not enough) 
         moderators = discord.utils.get(server.roles, name="Economy Bot Admin")
         user = discord.utils.get(server.members, name = 'Kendrik', discriminator = "2820")
 
